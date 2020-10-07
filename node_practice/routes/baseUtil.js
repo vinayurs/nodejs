@@ -1,4 +1,4 @@
-const mys = require('mysql');
+const mysql = require('mysql');
 
 const con = mysql.createConnection({
     host: "localhost",
@@ -11,4 +11,4 @@ const con = mysql.createConnection({
       res.send(error.toString())
   }
 
-  module.exports(con,exceptionHandler)
+  module.exports= {con,exceptionHandler}
